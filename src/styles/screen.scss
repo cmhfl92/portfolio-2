@@ -1,14 +1,99 @@
 @import 'utility';
 
+$font: #fff;
+$sectioncolor: #573230;
+$textcontent: 'Eb Garamond';
+$textheader: 'Poiret One';
+
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
 html {
   text-size-adjust: 100%;
+  background: url('http://coolblackppt.com/wp-content/uploads/2013/06/Free-iphone-wallpapers-for-you-black-wood-background.jpg');
+  background-attachment: fixed;
 }
 
-body {
+div {
   @include font-smoothing(on);
   margin: 0;
-  font: $base-text-size / 1 $base-font-family;
+  font-family: sans-serif;
 }
+
+ul.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5c9dba;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: solid $font;
+  // border-radius: 1em;
+  // position: fixed;
+  // center: 0
+  // top: 0
+
+  li {
+    font-family: $textcontent;
+    color: #2f4f4f;
+
+    &:hover {
+      cursor: pointer;
+      color: #ebe9dc;
+      -webkit-transform: glow;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: $font;
+  padding-top: 1em;
+  font-size: 4em;
+  font-family: $textheader;
+}
+
+h2 {
+  color: $font;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Josefin Slab;
+  padding-bottom: 2em;
+}
+
+// ul.portfolio {
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+//   flex-direction: row;
+  // could I have used mixins for these li?
+// }
+
+// li.port1 {
+//   background-color: lighten($sectioncolor, 40%);
+//   padding: 5em;
+//   border-color: solid $sectioncolor;
+//   border-radius: 1em;
+// }
+//
+// li.port2 {
+//   background-color: lighten($sectioncolor, 40%);
+//   padding: 5em;
+//   border-color: solid $sectioncolor;
+//   border-radius: 1em;
+// }
+//
+// li.port3 {
+//   background-color: lighten($sectioncolor, 40%);
+//   padding: 5em;
+//   border-color: solid $sectioncolor;
+//   border-radius: 1em;
+// }
+
+//   footer {
+//     background-image: url('http://ibscom.co.uk/wp-content/themes/Millis%20Theme/img/office.jpg');
+//   }
+// }
